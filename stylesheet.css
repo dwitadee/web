@@ -1,0 +1,230 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Lucida Grande";
+}
+
+a {
+  text-decoration: none;
+}
+
+.clear {
+  clear: left;
+}
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+header {
+  height: 65px;
+  width: 100%;
+  background-color: rgba(34, 49, 52, 0.9);
+  position :fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  width: 124px;
+  margin-top: 10px;
+}
+
+.header-left {
+  float: left;
+}
+
+.header-right {
+  float: right;
+  margin-right: 25px;
+}
+
+.header-right a {
+  line-height: 65px;
+  padding: 0 25px;
+  color: white;
+  display: block;
+  float: left;
+  transition: all 0.5s;
+}
+
+.header-right a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  
+}
+
+.top-wrapper {
+    padding: 180px 0 230px 0;
+    background-image: url(images/tumblr4.png);
+    background-size: cover;
+    color: grey;
+    text-align: center;
+}
+
+marquee {
+  opacity: 0.9;
+  font-size: 90px;
+  letter-spacing: 3px;
+  margin-bottom: 30px;
+}
+
+.blink {
+  opacity: 0.9;
+  margin-bottom: 3px;
+  font-size: 24px;
+  text-decoration: blink;
+  animation: blink-animation 1s steps(5, start) infinite;
+  -webkit-animation: blink-animation 1s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+.member-wrapper {
+    padding-bottom: 80px;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+
+.heading {
+    padding-top: 80px;
+    padding-bottom: 50px;
+    color: #5f5d60;
+}
+
+.heading h2 {
+    font-weight: normal;
+}
+
+.member {
+    float: left;
+    width: 20%;
+}
+
+.member-icon {
+    position: relative;
+}
+
+.member-icon p {
+    position: absolute;
+    top: 44%;
+    width: 100%;
+    color: white;
+}
+
+.member-icon img {
+    width: 200px;
+    height: 200px;
+}
+
+.text-contents {
+    width: 80%;
+    display: inline-block;
+    margin-top:  15px;
+    font-size: 15px;
+    color: #b3aeb5;
+}
+
+.contact-form {
+  padding-top: 40px;
+  background-color: #f7f7f7;
+  
+}
+
+.container-contact {
+  text-align: center;
+} 
+
+.title-contact {
+  border-bottom: 2px solid #dee7ec;
+  font-size: 28px;
+  padding-bottom: 15px;
+  margin-bottom: 50px;
+  color: #00BFFF;
+  font-family: "Comic Sans MS";
+  text-align: center;
+}
+
+.container-contact p {
+  font-family: "MS Gothic";
+}
+
+.container-contact span{
+  color:red;
+}
+
+/* Tambahkan CSS untuk tags <input> dan <textarea> */
+input,textarea {
+  width: 400px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  padding: 20px;
+  font-size: 18px;
+  border: 2px solid #dee7ec;
+  
+}
+
+/* Tambahkan CSS untuk contact-submit */
+.contact-submit {
+  width: 400px;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 4s;
+}
+
+@keyframes example {
+  0%   {background-color: red;}
+  25%  {background-color: yellow;}
+  50%  {background-color: blue;}
+  100% {background-color: green;}
+}
+
+
+.contact-submit:hover {
+  cursor: pointer;
+  color:white;
+}
+
+footer {
+    background-color: lightblue;
+	padding: 0 30px;
+	font-family:Arial;
+	height: 150px;
+}
+footer img {
+	height:30%;
+	width:30%;
+}
+
+footer img:hover {
+	opacity: 0.5;
+}
+
+footer h3 {
+	font-size: 25px;
+	margin-bottom:5px;
+}
+
+.footer-left {
+	float:left;
+	margin:10px 0;
+}
+
+.footer-right {
+	float:right;
+	margin-top: 5%;
+}
